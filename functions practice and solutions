@@ -1,4 +1,4 @@
-# Write a Python function to find the Max of three numbers
+# Write a Python function to find the Max of three numbers:
 def max_of_two(x,y):
     if x>y:
         return x
@@ -8,3 +8,12 @@ def max_of_three(x,y,z):
 print(max_of_three(3,6,4))
     
     
+#Write a Python function to sum all the numbers in a list:
+    
+
+def sum(numbers):
+    total=0
+    for x in numbers:
+        total +=x
+    return total
+print(sum((3,6,5,8)))
