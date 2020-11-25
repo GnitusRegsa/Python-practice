@@ -1,4 +1,7 @@
-# Write a Python function to find the Max of three numbers:
+Source:https://www.w3resource.com/python-exercises/python-functions-exercises.php
+
+#1. Write a Python function to find the Max of three numbers:
+
 def max_of_two(x,y):
     if x>y:
         return x
@@ -8,7 +11,7 @@ def max_of_three(x,y,z):
 print(max_of_three(3,6,4))
     
     
-#Write a Python function to sum all the numbers in a list:
+#2. Write a Python function to sum all the numbers in a list:
     
 
 def sum(numbers):
@@ -17,3 +20,100 @@ def sum(numbers):
         total +=x
     return total
 print(sum((3,6,5,8)))
+
+#3.Write a Python function to multiply all the numbers in a list
+
+def multi(numbers):
+    total=1
+    for x in numbers:
+        total *=x
+    return total
+print(multi((2,4,6,-3)))
+
+
+#4.Write a Python program to reverse a string
+
+
+def string_reverse(str1):
+
+    rstr1 = ''
+    index = len(str1)
+    while index > 0:
+        rstr1 += str1[ index - 1 ]
+        index = index - 1
+    return rstr1
+print(string_reverse('1234abcd'))
+
+#mine
+def revers(string):
+    return (string[::-1])
+
+print(revers("53636363"))
+
+
+#5.Write a Python function to check whether a number is in a given range.
+
+
+def test_range(n):
+    if n in range(3,9):
+        print( " %s is in the range"%str(n))
+    else :
+        print("The number is outside the given range.")
+test_range(5)
+
+
+#mine
+def check(c):
+    a=0
+    b=0
+    range=(a,b)
+
+    if a<c<b:
+        return ("within range")
+    else:
+        return ("out of range")
+
+range=(2,9)
+
+print(check(10))
+
+
+#6.Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+
+def string_test(s):
+    d={"UPPER_CASE":0, "LOWER_CASE":0}
+    for c in s:
+        if c.isupper():
+           d["UPPER_CASE"]+=1
+        elif c.islower():
+           d["LOWER_CASE"]+=1
+        else:
+           pass
+    print ("Original String : ", s)
+    print ("No. of Upper case characters : ", d["UPPER_CASE"])
+    print ("No. of Lower case Characters : ", d["LOWER_CASE"])
+
+string_test('The quick Brown Fox')
+
+#mine(questionable)
+def case_of_string(string):
+    
+    for x in string:
+
+        no_of_cap=0
+        no_of_low=0
+        if x.isupper():          
+            no_of_cap +=1
+            
+        elif x.islower():
+            no_of_low +=1
+            
+        return ("the no. of Upper case characters:"+str(no_of_cap)+ " the no. of Lower case characters:"+str(no_of_low))
+print(case_of_string('Tdkafkpajf'))
+
+
+
+
+
+
+
