@@ -95,20 +95,21 @@ def string_test(s):
 
 string_test('The quick Brown Fox')
 
-#mine(questionable)
+#mine
 def case_of_string(string):
-    
+    no_of_cap=0
+    no_of_low=0
+
     for x in string:
 
-        no_of_cap=0
-        no_of_low=0
+       
         if x.isupper():          
             no_of_cap +=1
             
         elif x.islower():
             no_of_low +=1
             
-        return ("the no. of Upper case characters:"+str(no_of_cap)+ " the no. of Lower case characters:"+str(no_of_low))
+    return ("the no. of Upper case characters:"+str(no_of_cap)+ " the no. of Lower case characters:"+str(no_of_low))
 print(case_of_string('Tdkafkpajf'))
 
 
